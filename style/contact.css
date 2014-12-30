@@ -1,0 +1,57 @@
+#info {
+	color: black;
+	font-family: "Cambria";
+	font-size: 20px;
+	margin-top: 0;
+	padding: 10px;
+	margin-left: 25px;
+	padding-right: 0;
+}
+
+#name_h {
+	font-family: "FishFingers";
+	color: #33487d;
+	font-size: 40px;
+}
+
+#school {
+	font-family: "FishFingers";
+	font-size: 25px;
+	color: #33487d;
+}
+
+#email {
+	color: #33487d;	
+}
+
+.left {
+	font-family: "Cambria";
+	float: left;
+	width: 50%;
+}
+
+.right {
+	font-family: "Cambria";
+	float: left;
+	width: 45%;
+	padding: 10px;
+}
+.places a {
+	text-decoration: none;
+	color: #33487d;
+}
+
+.places {
+	margin: 0;
+	padding: 0;
+	font-family: "FishFingers";
+	text-decoration: none;
+	color: #33487d;
+	font-size: 45px;
+
+}
+
+#form {
+	padding: 40px;
+	padding-top: 10px;
+}

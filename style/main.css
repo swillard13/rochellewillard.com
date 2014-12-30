@@ -1,0 +1,62 @@
+body {
+	background-image: url("../images/gradient.png");
+	background-repeat:repeat-x;
+	background-size: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+#nav {
+	width: 100%;
+	height: 35px;
+	background-color: #D8BDF2;
+	margin: 0;
+	padding: 0;
+	opacity: .75;
+	display: block;
+}
+
+.clear {
+	clear: both;
+}
+
+#bar {
+	display: block;
+	margin: 0 auto;
+	width: 610px;
+}
+
+.nav_item {
+	float: left;
+	color: #627ad5;
+	padding: 6px 22px;
+	padding-bottom: 1px;
+	font-family: "FishFingers";
+	font-size: 28px;
+	margin-bottom: 6px;
+	margin-top: 0;
+
+}
+
+#title {
+	color: #e5dff0;
+	text-align: center;
+	font-family: "Fishfingers";
+	font-size: 60px;
+}
+
+.nav_item:hover
+{ 
+	background-color: #e5dff0;
+}
+
+@font-face {
+	font-family: "StarsFromOurEyes";
+	src: url(../fonts/StarsFromOurEyes.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "Fishfingers";
+	src: url(../fonts/Fishfingers\ Light.ttf) format("truetype");
+}
+
