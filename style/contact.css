@@ -10,18 +10,18 @@
 
 #name_h {
 	font-family: "FishFingers";
-	color: #33487d;
+	color: #000000;
 	font-size: 40px;
 }
 
 #school {
 	font-family: "FishFingers";
 	font-size: 25px;
-	color: #33487d;
+	color: #000000;
 }
 
 #email {
-	color: #33487d;	
+	color: #000000;	
 }
 
 .left {
@@ -38,7 +38,7 @@
 }
 .places a {
 	text-decoration: none;
-	color: #33487d;
+	color: #000000;
 }
 
 .places {
@@ -46,7 +46,7 @@
 	padding: 0;
 	font-family: "FishFingers";
 	text-decoration: none;
-	color: #33487d;
+	color: #000000;
 	font-size: 45px;
 
 }

@@ -1,13 +1,3 @@
-#name {
-	padding: 0;
-	display: block;
-	font-family: "StarsFromOurEyes";
-	font-size: 25px;
-	color: #e5dff0;
-	padding-bottom: 0px;
-	margin-left: 25px;
-	margin-top: 15px;
-}
 .right {
 	font-family: "Cambria";
 	width: 30%;
@@ -26,7 +16,7 @@
 }
 .headers {
 	font-family: "FishFingers";
-	color: #33487d;
+	color: #000000;
 	font-size: 45px;
 	margin: 0;
 }

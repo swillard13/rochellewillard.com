@@ -11,15 +11,15 @@
 	text-decoration: none;
 }
 #name img {
-	width: 200px;
+	width: 350px;
 }
 
 #current {
-	background-color: #e5dff0;
+	background-color: #C7C7C7;
 }
 
 #center{
-	background-color: #e5dff0;
+	background-color: #C7C7C7;
 	width: 80%;
 	min-width: 700px;
 	height: 100%;
@@ -28,7 +28,7 @@
 	margin-top: -6px;
 	opacity: .75;
 	border-style: dotted;
-	border-color: #D8BDF2;
+	border-color: #000000;
 	border-top: 0;
 	border-bottom: 0;
 }
@@ -39,13 +39,13 @@
 	position: relative;
 	bottom:0;
 	left:0;
-	background-color: #D8BDF2;
+	background-color: #000000;
 	opacity: .75;
 	text-align: center;
 }
 
 #footer p {
-	color: #627ad5;
+	color: #FFFFFF;
 	font-family: 'FishFingers';
 	margin: 0;
 	padding-top: 9px;
