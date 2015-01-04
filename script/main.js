@@ -1,8 +1,15 @@
 $(document).ready(function() {
 	$('.center').hide();
 	$('#about-me').show();
+	var stickyNavTop = $('#nav').offset().top;
+  
+	stickyNav(stickyNavTop);
+	$(window).scroll(function() {  
+	    stickyNav(stickyNavTop);  
+	}); 
 	bindEvents();
 });
+
 function bindEvents() {
 	$('.nav_item').click(function() {
 		var current = $('.current');
@@ -24,3 +31,12 @@ function bindEvents() {
 		}
 	});
 }
+
+function stickyNav(top) {  
+	var scrollTop = $(window).scrollTop();    
+	if (scrollTop > top) {   
+	    $('#nav').addClass('sticky');  
+	} else {  
+	    $('#nav').removeClass('sticky');   
+	}  
+};	
