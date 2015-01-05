@@ -4,6 +4,7 @@ body {
 	background-size: 100%;
 	padding: 0;
 	margin: 0;
+	font-family: Helvetica;
 }
 #nav {
 	width: 100%;
@@ -106,13 +107,11 @@ body {
 	padding-top: 9px;
 }
 #about-me .right {
-	font-family: "Cambria";
 	width: 30%;
 	padding: 20px;
 	float: right;
 }
 #about-me .left {
-	font-family: "Cambria";
 	padding: 20px;
 }
 #about-me .right img {
@@ -142,13 +141,11 @@ body {
 	margin-left: 20px;
 }
 #experience .left {
-	font-family: "Cambria";
 	float: left;
 	width: 30%;
 	padding: 20px;
 }
 #experience .right {
-	font-family: "Cambria";
 	float: left;
 	width: 60%;
 	padding: 20px;
@@ -189,13 +186,11 @@ body {
 	text-align: center;
 }
 #projects .left {
-	font-family: "Cambria";
 	float: left;
 	width: 30%;
 	padding: 20px;
 }
 #projects .right {
-	font-family: "Cambria";
 	float: left;
 	width: 60%;
 	padding: 20px;
@@ -249,7 +244,6 @@ body {
 }
 #contact-me #info {
 	color: black;
-	font-family: "Cambria";
 	font-size: 20px;
 	margin-top: 0;
 	padding: 10px;
@@ -270,12 +264,10 @@ body {
 	color: #000000;	
 }
 #contact-me .left {
-	font-family: "Cambria";
 	float: left;
 	width: 50%;
 }
 #contact-me .right {
-	font-family: "Cambria";
 	float: left;
 	width: 45%;
 	padding: 10px;
