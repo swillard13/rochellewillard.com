@@ -2,159 +2,135 @@
 <html>
 <head>
 	<title>Rochelle Willard</title>
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="mdl/material.min.css">
 	<link href="style/main.css" rel="stylesheet" type="text/css">
 	<script src="mdl/material.min.js"></script>
 </head>
 <body>
-	<div id="top">
-		<div id="top-stuff"><h1 id="name">rochelle willard</hl>
-			<p id="description">student. developer. tech enthusiast.</p>
+	<!--NAVIGATION BAR-->
+	<!-- Always shows a header, even in smaller screens. -->
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<!-- Title -->
+				<span class="mdl-layout-title">Rochelle Willard</span>
+				<!-- Add spacer, to align navigation to the right -->
+				<div class="mdl-layout-spacer"></div>
+				<!-- Navigation. We hide it in small screens. -->
+				<nav class="mdl-navigation mdl-layout--large-screen-only">
+					<a class="mdl-navigation__link" href="#about-me">About Me</a>
+					<a class="mdl-navigation__link" href="#projects">Projects</a>
+					<a class="mdl-navigation__link" href="#work">Work</a>
+					<a class="mdl-navigation__link" href="#resume">Resume</a>
+				</nav>
+			</div>
+		</header>
+		<div class="mdl-layout__drawer">
+			<span class="mdl-layout-title">Menu</span>
+			<nav class="mdl-navigation">
+				<a class="mdl-navigation__link" href="#about-me">About Me</a>
+				<a class="mdl-navigation__link" href="#projects">Projects</a>
+				<a class="mdl-navigation__link" href="#work">Work</a>
+				<a class="mdl-navigation__link" href="#resume">Resume</a>
+			</nav>
 		</div>
-	</div>
-	<div id="about-me" class="stuff">
-		<div class="title">about me</div>
-		<div class="inner-body">
-			<div id="about-me-blurb" class="left">Hi, I'm Shelly! I'm an undergraduate student at the University of Southern California majoring in <em>Computer Science</em> with minors in <em>Computational Biology</em> and <em>Applied Cyber Security</em>.  I love programming and exploring new ways to use technology to better the world around us. 
-			</div>
-			<div id="pic"><img src="images/rochelle.jpg" alt-text="Shelly" /></div>
-			<div class="clear"></div>
+		<main class="mdl-layout__content">
+			<div class="page-content">
+				<!-- <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp" id="about-me">
+					<header class="mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
+					</header>
+					<div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
+						<div class="mdl-card__supporting-text">
+							<h4>About Me</h4>
+							Hi, I'm Shelly! I'm a rising junior at the University of Southern California majoring in <b>Computer Science</b> with minors in <b>Computational Biology</b> and <b>Applied Cyber Security</b>. I love programming and exploring new ways to use technology to better the world around us.
+						</div>
+					</div>
+				</section> -->
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored section-title">About Me</button>	
+				<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored section-title">Projects</button>
+
+				<div class="inner-body">
+					<div class="mdl-card mdl-shadow--2dp project">
+						<div id="college" class="mdl-card__title">
+						</div>
+						<div class="mdl-card__supporting-text">
+							A web app that allows you to generate a generic tweet based on the tweets from a college's area.
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a href="http://htcollege.heuristix.me/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								#College
+							</a>
+						</div>
+					</div>
+
+					<div class="mdl-card mdl-shadow--2dp project">
+						<div id="scal" class="mdl-card__title">
+						</div>
+						<div class="mdl-card__supporting-text">
+							A web app that converts a USC course list to a Google Calendar
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a href="http://scal.heuristix.me/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								SCal
+							</a>
+						</div>
+					</div>
+
+					<div class="mdl-card mdl-shadow--2dp project">
+						<div id="spaceteam" class="mdl-card__title">
+						</div>
+						<div class="mdl-card__supporting-text">
+							Final project for CSCI 201: A Java app that replicates the popular mobile game SpaceTeam
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a href="https://github.com/swillard13/Spaceteam" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								SpaceTeam
+							</a>
+						</div>
+					</div>
+
+					<div class="mdl-card mdl-shadow--2dp project">
+						<div id="webreg" class="mdl-card__title">
+						</div>
+						<div class="mdl-card__supporting-text">
+							3rd Place for a mobile implementation of the USC Web Registration System
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a href="https://github.com/amohan95/usc_web_registration" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								USC Mobile Web Registration Contest
+							</a>
+						</div>
+					</div>
+
+					<div class="mdl-card mdl-shadow--2dp project">
+						<div id="tetrabble" class="mdl-card__title">
+						</div>
+						<div class="mdl-card__supporting-text">
+							A web game that combines Tetris and Scrabble.
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a href="http://tetrabble.appspot.com/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								Tetrabble
+							</a>
+						</div>
+					</div>
+
+					<div class="mdl-card mdl-shadow--2dp project">
+						<div id="birthday" class="mdl-card__title">
+						</div>
+						<div class="mdl-card__supporting-text">
+							A quick way to create a personalized birthday webpage for a friend.
+						</div>
+						<div class="mdl-card__actions mdl-card--border">
+							<a href="http://ananthmohan.com/projects/birthday-message/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+								Birthday Pages
+							</a>
+						</div>
+					</div>
+					<button class="mdl-button mdl-js-button mdl-button--raised mdl-button--	colored section-title">Work Experience</button>
+				</div>
+			</main>
 		</div>
-	</div>
-
-	<div id="projects">
-		<div class="title">projects</div>
-		<div class="inner-body">
-			<div class="mdl-card mdl-shadow--2dp demo-card-square">
-			<div id="college" class="mdl-card__title">
-			</div>
-			  <div class="mdl-card__supporting-text">
-			    A web app that allows you to generate a generic tweet based on the tweets from a college's area.
-			  </div>
-			  <div class="mdl-card__actions mdl-card--border">
-			    <a href="http://htcollege.heuristix.me/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-			      #College
-			    </a>
-			  </div>
-			</div>
-
-			<div class="mdl-card mdl-shadow--2dp demo-card-square">
-			<div id="scal" class="mdl-card__title">
-			</div>
-			  <div class="mdl-card__supporting-text">
-			    A web app that converts a USC course list to a Google Calendar
-			  </div>
-			  <div class="mdl-card__actions mdl-card--border">
-			    <a href="http://scal.heuristix.me/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-			      SCal
-			    </a>
-			  </div>
-			</div>
-
-			<div class="mdl-card mdl-shadow--2dp demo-card-square">
-			<div id="spaceteam" class="mdl-card__title">
-			</div>
-			  <div class="mdl-card__supporting-text">
-			    Final project for CSCI 201: A Java app that replicates the popular mobile game SpaceTeam
-			  </div>
-			  <div class="mdl-card__actions mdl-card--border">
-			    <a href="https://github.com/swillard13/Spaceteam" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-			      SpaceTeam
-			    </a>
-			  </div>
-			</div>
-
-			<!-- <div class="clear"></div> -->
-
-			<div class="mdl-card mdl-shadow--2dp demo-card-square">
-			<div id="webreg" class="mdl-card__title">
-			</div>
-			  <div class="mdl-card__supporting-text">
-			    3rd Place for a mobile implementation of the USC Web Registration System
-			  </div>
-			  <div class="mdl-card__actions mdl-card--border">
-			    <a href="https://github.com/amohan95/usc_web_registration" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-			      USC Mobile Web Registration Contest
-			    </a>
-			  </div>
-			</div>
-
-			<div class="mdl-card mdl-shadow--2dp demo-card-square">
-			<div id="tetrabble" class="mdl-card__title">
-			</div>
-			  <div class="mdl-card__supporting-text">
-			    A web game that combines Tetris and Scrabble.
-			  </div>
-			  <div class="mdl-card__actions mdl-card--border">
-			    <a href="http://tetrabble.appspot.com/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-			      Tetrabble
-			    </a>
-			  </div>
-			</div>
-
-			<div class="mdl-card mdl-shadow--2dp demo-card-square">
-			<div id="birthday" class="mdl-card__title">
-			</div>
-			  <div class="mdl-card__supporting-text">
-			    A quick way to create a personalized birthday webpage for a friend.
-			  </div>
-			  <div class="mdl-card__actions mdl-card--border">
-			    <a href="http://ananthmohan.com/projects/birthday-message/" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-			      Birthday Pages
-			    </a>
-			  </div>
-			</div>
-
-			<!-- <div class="clear"></div> -->
-
-		</div>
-	</div>
-
-	<div id="experience" class="stuff">
-		<div class="title">work experience</div>
-		<div class="inner-body">
-			<div class="work">
-				<div class="work-pic left"><img src="images/google.png" /></div> 
-				<div class="work-stuff">
-					<h3>Google - Software Engineering Intern</h3>
-					<h4>May 2015 - August 2015</h4>
-					<p>This summer I am interning on the Google AdMob team as a 12-week Software Engineering Intern.</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="work">
-				<div class="work-stuff left">
-					<h3>USC - Course Producer for CSCI 104</h3>
-					<h4>January 2015 - May 2015</h4>
-					<p>Undergraduate TA for Data Structures and Algorithms in C++.
-					Held weekly office hours to help students with homework assignments and concepts. 
-					Attended two lab sections per week to check off lab assignments and help students with course material.</p>
-				</div>
-				<div class="work-pic"><img src="images/usc_cs.jpeg" /></div> 
-				<div class="clear"></div>
-			</div>
-			<div class="work">
-				<div class="work-pic left"><img src="images/usc_cs.jpeg" /></div> 
-				<div class="work-stuff">
-					<h3>USC - Course Producer for CSCI 103</h3>
-					<h4>August 2014 - December 2014</h4>
-					<p>Undergraduate TA for Introduction to Programming in C++.
-					Held office hours once a week for two hours to help students with lab and homework assignments. Attended two lab sections per week to check off lab assignments.  Graded biweekly programming assignments.</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="work">
-				<div class="work-stuff left">
-					<h3>Google - Engineering Practicum Intern</h3>
-					<h4>May 2014 - August 2014</h4>
-					<p>Twelve week internship working with the Maps Engine (My Maps) and Maps Gallery teams. Worked on the search functionality of the Google Maps Engine Viewer. Contributed to the front-end development in JavaScript.</p>
-				</div>
-				<div class="work-pic"><img src="images/google.png" /></div> 
-				<div class="clear"></div>
-			</div>
-		</div>
-
-	</div>
-
-
-</body>
+	</body>
