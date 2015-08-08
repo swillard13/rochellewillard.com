@@ -71,6 +71,31 @@ section.section--center {
     width: 85%;
 }
 
+#about-me-card-wrapper {
+	padding: 15px;
+	width: 100%;
+}
+
+#about-me-card {
+	width: auto;
+}
+
+#about-me-card .mdl-card__title {
+	width: 30%;
+	height: 100%;
+	float: left;
+	background: url("../images/rochelle.jpg");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #e3e3e3;
+}
+
+#about-me-card .mdl-card__supporting-text {
+	font-size: 20px;
+	line-height: 30px;
+}
+
 #college {
 	height: 176px;
 	background: url("../images/%23college.png");
@@ -120,9 +145,18 @@ section.section--center {
 	height: 176px;
 	background: url("../images/birthday.png");
 	background-position: center;
-	background-size: contain;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #e3e3e3;
+}
+
+#oickos {
+	height: 176px;
+	background: url("../images/oickos.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #c9fc95;
 }
 
 .mdl-card {
