@@ -1,21 +1,12 @@
 body {
 	font-family: 'Raleway';
 	background-color: #f1f1f1;
+	background-image: url(https://wallpaperscraft.com/image/san_francisco_water_cities_houses_cars_sea_bridges_skyscrapers_ocean_30743_1920x1080.jpg);
+	background-size: cover;
 }
 
 h3, h4, .mdl-button {
 	font-family: 'Raleway';
-}
-
-#about-me {
-	min-height: 300px;
-}
-
-#about-me header {
-	background-image: url(../images/rochelle.jpg);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
 }
 
 .page-content {
@@ -82,11 +73,11 @@ section.section--center {
 
 #about-me-card .mdl-card__title {
 	width: 30%;
-	height: 100%;
+	height: 320px;
 	float: left;
 	background: url("../images/rochelle.jpg");
-	background-position: center;
-	background-size: contain;
+	background-position: right;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: #e3e3e3;
 }
@@ -94,6 +85,7 @@ section.section--center {
 #about-me-card .mdl-card__supporting-text {
 	font-size: 20px;
 	line-height: 30px;
+	width: 60%;
 }
 
 #college {
@@ -166,12 +158,23 @@ section.section--center {
 	margin: 15px;
 	min-height: 320px;
 }
+
 .mdl-card__actions {
 	position: absolute;
 	bottom: 0;
 }
+
 .mdl-card__supporting-text {
+	padding: 0;
 	vertical-align: middle;
+}
+
+.about-me-blurb {
+	padding: 25px;
+}
+
+.project .mdl-card__supporting-text {
+	padding: 15px;
 }
 
 @media only screen and (max-device-width:800px) {
@@ -191,8 +194,29 @@ section.section--center {
 }
 
 @media (max-width:970px) {
+	#about-me-card .mdl-card__title {
+		background-size: cover;
+		height: 350px;
+		float: none;
+		width: 100%;
+	}
+
+	#about-me-card .mdl-card__supporting-text {
+		width: 100%;
+	}
+
 	.page-content {
 		width: 624px;
+	}
+}
+
+@media (max-width:700px) {
+	#about-me-card {
+		margin: 0;
+	}
+
+	#about-me-card .mdl-card__title {
+		height: 300px;
 	}
 }
 
