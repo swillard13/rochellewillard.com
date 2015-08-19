@@ -9,15 +9,9 @@ h3, h4, .mdl-button {
 	font-family: 'Raleway';
 }
 
-nav a {
-		/* transition */
-	-webkit-transition: all .5s ease;
-	-moz-transition: all .5s ease;
-	transition: all .5s ease;
-}
-
 .page-content {
 	padding-top: 2em;
+	position: relative;
 	width: 1251px;
 	margin: 0 auto;
 }
@@ -90,9 +84,9 @@ section.section--center {
 }
 
 #about-me-card .mdl-card__supporting-text {
-	font-size: 20px;
-	line-height: 30px;
-	width: 60%;
+  font-size: 22px;
+  line-height: 35px;
+	width: 70%;
 }
 
 #college {
@@ -224,6 +218,14 @@ section.section--center {
 .job .date {
 	float: right;
 	padding: 5px 10px; 
+}
+
+footer {
+	background-color: rgba(221, 221, 221, 0.6);
+	height: 20px;
+	margin-top: 20px; 
+	text-align: center;
+	width: 100%;
 }
 
 @media only screen and (max-device-width:800px) {
