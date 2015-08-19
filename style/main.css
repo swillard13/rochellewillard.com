@@ -1,12 +1,19 @@
 body {
 	font-family: 'Raleway';
 	background-color: #f1f1f1;
-	background-image: url(https://wallpaperscraft.com/image/san_francisco_water_cities_houses_cars_sea_bridges_skyscrapers_ocean_30743_1920x1080.jpg);
+	background-image: url(../images/san-fran.jpg);
 	background-size: cover;
 }
 
 h3, h4, .mdl-button {
 	font-family: 'Raleway';
+}
+
+nav a {
+		/* transition */
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
 }
 
 .page-content {
@@ -177,6 +184,48 @@ section.section--center {
 	padding: 15px;
 }
 
+.job {
+	min-height: 270px;
+	width: calc(50% - 32px);
+}
+
+.job-left {
+	float: left;
+	padding: 20px;
+	width: 23%;
+}
+
+.job-left img {
+	border-radius: 10px;
+	height: auto;
+	width: 100%;
+}
+
+.company {
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+}
+
+.job .mdl-card__supporting-text {
+	font-size: 19px;
+  line-height: 26px;
+	padding: 12px;
+  padding-top: 20px;
+	width: 60%;
+}
+
+.job .title {
+	color: #3f51b5;
+	float: left;
+	padding: 5px 10px; 
+}
+
+.job .date {
+	float: right;
+	padding: 5px 10px; 
+}
+
 @media only screen and (max-device-width:800px) {
 	.mdl-layout__header .mdl-layout__drawer-button {
 		visibility: visible;
@@ -188,12 +237,33 @@ section.section--center {
 }
 
 @media (max-width:1250px) {
+	.job {
+    min-height: 320px;
+	}
+
+	.job .title {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+
+	.job .date {
+		display: block;
+		float: none;
+		padding-top: 0;
+		text-align: center;
+	}
+
 	.page-content {
 		width: 938px;
 	}
 }
 
 @media (max-width:970px) {
+	.section-title {
+		width: 100%;
+	}
+
 	#about-me-card .mdl-card__title {
 		background-size: cover;
 		height: 350px;
@@ -208,6 +278,23 @@ section.section--center {
 	.page-content {
 		width: 624px;
 	}
+
+	.job {
+		margin: 15px 0;
+		min-height: 270px;
+		width: auto;
+	}
+
+	.job .title {
+		display: inline;
+		float: left;
+	}
+
+	.job .date {
+		display: inline;
+		float: right;
+		padding-top: 5px;
+	}
 }
 
 @media (max-width:700px) {
@@ -218,9 +305,12 @@ section.section--center {
 	#about-me-card .mdl-card__title {
 		height: 300px;
 	}
-}
 
-@media (max-width:660px) {
+	.project .mdl-card__supporting-text {
+		font-size: 16px;
+    line-height: 21px;
+	}
+
 	.page-content {
 		width: 80%;
 	}
@@ -229,6 +319,56 @@ section.section--center {
 		width: 100%;
 		padding: 0;
 		margin: 15px 0;
+	}
+}
+
+@media (max-width: 620px) {
+	.job {
+    min-height: 320px;
+	}
+
+	.job .title {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+
+	.job .date {
+		display: block;
+		float: none;
+		padding-top: 0;
+		text-align: center;
+	}
+}
+
+@media (max-width: 545px) {
+	.job {
+    min-height: 370px;
+	}
+}
+
+@media (max-width: 480px) {
+	.job {
+    min-height: 510px;
+	}
+
+	.job-left {
+		float: none;
+		width: 90%;
+	}
+
+	.job-left img {
+		display: inherit;
+		margin: 0 auto;
+		width: 40%;
+	}
+
+	.job .mdl-card__supporting-text {
+		display: block;
+		float: none;
+		margin: 0 auto;
+		padding: 0 10px;
+		width: 90%;
 	}
 }
 
