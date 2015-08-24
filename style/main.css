@@ -344,7 +344,7 @@ footer {
 	}
 }
 
-@media (max-width: 545px) {
+@media (max-width: 560px) {
 	.job {
     min-height: 370px;
 	}
